@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percobaan Pertama</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+             // Store hash
+             var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+          });
+        } // End if
+        });
+    });
+    </script>
+    <style>
+        #logoup {
+            float: left;
+            align-content: center;
+            line-height: 60px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .judul {
+            float: right;
+            font-size: 14pt;
+            font-family: "Montserrat Medium", Montserrat, monospace;
+            white-space: pre;
+            text-decoration: blink;
+            line-height: 37px;
+            text-align: center;
+            color: black;
+        }
+        #baratas {
+            height: 70px;
+            width: 100%;
+            margin: auto;
+            padding: 0;
+            box-shadow: darkgrey;
+        }
+        .nav {
+            list-style-type: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+
+        .nav li {
+            display: inline-block;
+            font-size: 18px;
+            padding: 10px;
+        }
+        .linka {
+            color: black;
+            text-decoration: inherit;
+            font-size: 14px;
+        }
+        #main-elemen {
+            height: 550px;
+            width: 100%;
+            text-align: center;
+            line-height: 500px;
+            font-size: 50px;
+            text-decoration: underline;
+            text-decoration-color: royalblue;
+            font-family: "Baloo 2", monospace;
+        }
+        #small-arrow {
+            align-self: center;
+            margin: auto;
+            width: 40px;
+            padding: 10px;
+        }
+
+        #main-elemen:hover {
+            text-decoration-color: lightcoral;
+        }
+        div.rect {
+            background-color: white;
+            width: 100%;
+            height: 70px;
+            margin-top: 100px;
+        }
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: lightcyan;
+            color: lightslategrey;
+            font-family: "Montserrat Medium";
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="logoup"> 
+        <img src="img/logo.png" width="50" height="50" >
+    </div>
+    <div id="baratas">
+        <ul class="nav">
+            <li><a href="#home" class="judul">Home</a></li>
+            <li><a href="#about" class="judul">About Us</a></li>
+            <li><a href="#lesson" class="judul">Lesson</a></li>  
+        </ul>
+    </div>
+    <div id="main-elemen">
+        <p>"your code starts here."</p>
+    </div>
+    <div id="small-arrow">
+        <a href="#about"><img src="img/small-arrow.png" width="40" height="23.66"></a>
+    </div>
+    <div class="rect.2">
+    </div>
+    // pengenalan "What's Whiteboard?"
+    <div class="rect" id="about">
+        <h1 style="text-align: center; font-family: 'Montserrat', monospace;">What's Whiteboard?</h1>
+    </div>
+
+    <div id="baratas">
+        <ul class="nav">
+            <li>
+                <span style="margin-bottom: 20px; margin-left: 40px; width: 250px; height: 250px; padding: 10%; background-color: floralwhite;">
+                    <h3 style="text-align: center; font-family: 'Montserrat';">
+                        Free R Learning
+                    </h3>
+                    <p style="letter-spacing: 0.6px;">
+                        Whiteboard is a free learning. <br> 
+                        You can easily understand how R works.  
+                    </p>
+                </span>
+            </li>
+            <li>
+                <span>
+                    <h3>
+                        Free R Learning
+                    </h3>
+                    <p>
+                        Whiteboard is a free learning. <br> 
+                        You can easily understand how R works.  
+                    </p>
+                </span>
+            </li>
+        </ul>
+    </div>
+
+    <table>
+        <tr>
+            <td style="margin-left: 30px;">
+                <div >
+                   
+                </div>
+            </td>
+            <td style="margin-left: 30px;">
+                <div style="margin-bottom: 20px; margin-left: 40px; width: 250px; height: 250px; padding: 10%; background-color: floralwhite;">
+                    <h3 style="text-align: center; font-family: 'Montserrat';">
+                        Free R Learning
+                    </h3>
+                    <p style="letter-spacing: 0.6px;">
+                        Whiteboard is a free learning. <br> 
+                        You can easily understand how R works.  
+                    </p>
+                </div>
+            </td>
+        </tr>
+    </table>
+    
+    <footer>
+        <p>yoursunshineR | 2020<br>
+        <a class="linka" href="mailto:jangandisebarkeoranglainya@gmail.com">my email</a></p>
+    </footer>
+</body>
+</html>
